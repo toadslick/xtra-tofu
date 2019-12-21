@@ -4,14 +4,14 @@ import Knuckle from './components/Knuckle.js';
 import cs from './assets/cs.mp3';
 
 const config = [
-  { width: 78, keyCode: 0, buffer: cs },
-  { width: 54, keyCode: 0, buffer: cs },
-  { width: 71, keyCode: 0, buffer: cs },
-  { width: 73, keyCode: 0, buffer: cs },
-  { width: 77, keyCode: 0, buffer: cs },
-  { width: 68, keyCode: 0, buffer: cs },
-  { width: 51, keyCode: 0, buffer: cs },
-  { width: 80, keyCode: 0, buffer: cs },
+  { width: 78, keyCode: 37, buffer: cs },
+  { width: 54, keyCode: 38, buffer: cs },
+  { width: 71, keyCode: 40, buffer: cs },
+  { width: 73, keyCode: 39, buffer: cs },
+  { width: 77, keyCode: 32, buffer: cs },
+  { width: 68, keyCode: 87, buffer: cs },
+  { width: 51, keyCode: 83, buffer: cs },
+  { width: 80, keyCode: 71, buffer: cs },
 ];
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
     x += width;
     return component;
   });
+
   return (
     <div className="App">
       <div className="App-knuckles">{knuckles}</div>
