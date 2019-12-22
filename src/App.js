@@ -1,9 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import Knuckle from './components/Knuckle.js';
-import config from './utils/config';
+import { knuckles, totalWidth } from './utils/config';
+
+const SCALE_PERCENT = 0.9;
 
 function App() {
   const [activeKeyCodes, setActiveKeyCodes] = useState({});
+  const [scale, setScale] = useState(1);
+  const appRef = useRef(null);
 
   useEffect(() => {
     const onKeyDown = ({ keyCode }) => {
@@ -22,10 +26,18 @@ function App() {
     };
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
+  useEffect(() => {
+    const onSizeChange = () =>
+      setScale(SCALE_PERCENT * (appRef.current.offsetWidth / totalWidth));
+    window.addEventListener('resize', onSizeChange);
+    onSizeChange();
+    return () => window.removeEventListener('resize', onSizeChange);
+  }, []);
+
   return (
-    <div className="App">
-      <div className="App-knuckles">
-        {config.map(({ offset, width, keyCode, url }, index) => (
+    <div className="App" ref={appRef}>
+      <div className="App-knuckles" style={{ transform: `scale(${scale})` }}>
+        {knuckles.map(({ offset, width, keyCode, url }, index) => (
           <Knuckle
             active={activeKeyCodes[keyCode]}
             key={index}

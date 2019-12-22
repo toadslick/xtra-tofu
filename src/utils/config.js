@@ -1,6 +1,6 @@
 import cs from '../assets/cs.mp3';
 
-const config = [
+const knuckles = [
   { width: 78, keyCode: 37, url: cs },
   { width: 54, keyCode: 38, url: cs },
   { width: 71, keyCode: 40, url: cs },
@@ -12,9 +12,9 @@ const config = [
 ];
 
 let offset = 0;
-config.forEach(obj => {
+knuckles.forEach(obj => {
   obj.offset = offset;
   offset += obj.width;
 });
 
-export default config;
+export { knuckles, offset as totalWidth };
