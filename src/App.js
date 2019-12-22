@@ -1,31 +1,40 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Knuckle from './components/Knuckle.js';
-import cs from './assets/cs.mp3';
-
-const config = [
-  { width: 78, keyCode: 37, buffer: cs },
-  { width: 54, keyCode: 38, buffer: cs },
-  { width: 71, keyCode: 40, buffer: cs },
-  { width: 73, keyCode: 39, buffer: cs },
-  { width: 77, keyCode: 32, buffer: cs },
-  { width: 68, keyCode: 87, buffer: cs },
-  { width: 51, keyCode: 83, buffer: cs },
-  { width: 80, keyCode: 71, buffer: cs },
-];
+import config from './utils/config';
 
 function App() {
-  let x = 0;
-  const knuckles = config.map(({ width, keyCode, url }, index) => {
-    const component = (
-      <Knuckle buffer={url} key={index} keyCode={keyCode} width={width} x={x} />
-    );
-    x += width;
-    return component;
-  });
+  const [activeKeyCodes, setActiveKeyCodes] = useState({});
+
+  useEffect(() => {
+    const onKeyDown = ({ keyCode }) => {
+      activeKeyCodes[keyCode] = true;
+      setActiveKeyCodes({ ...activeKeyCodes });
+    };
+    const onKeyUp = ({ keyCode }) => {
+      delete activeKeyCodes[keyCode];
+      setActiveKeyCodes({ ...activeKeyCodes });
+    };
+    window.addEventListener('keydown', onKeyDown);
+    window.addEventListener('keyup', onKeyUp);
+    return () => {
+      window.removeEventListener('keydown', onKeyDown);
+      window.removeEventListener('keyup', onKeyUp);
+    };
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div className="App">
-      <div className="App-knuckles">{knuckles}</div>
+      <div className="App-knuckles">
+        {config.map(({ offset, width, keyCode, url }, index) => (
+          <Knuckle
+            active={activeKeyCodes[keyCode]}
+            key={index}
+            offset={offset}
+            url={url}
+            width={width}
+          />
+        ))}
+      </div>
     </div>
   );
 }
