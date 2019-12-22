@@ -9,6 +9,7 @@ const SCALE_PERCENT = 0.9;
 function App() {
   const [activeKeyCodes, setActiveKeyCodes] = useState({});
   const [scale, setScale] = useState(1);
+  const [active, setActive] = useState(false);
   const appRef = useRef(null);
 
   useEffect(() => {
@@ -21,11 +22,13 @@ function App() {
           autoplay: true,
         });
       }
+      setActive(true);
     };
 
     const onKeyUp = ({ keyCode }) => {
       delete activeKeyCodes[keyCode];
       setActiveKeyCodes({ ...activeKeyCodes });
+      setActive(false);
     };
 
     window.addEventListener('keydown', onKeyDown);
@@ -45,7 +48,10 @@ function App() {
   }, []);
 
   return (
-    <div className="App" ref={appRef}>
+    <div
+      className={`App ${active ? 'App-active' : 'App-inactive'}`}
+      ref={appRef}
+    >
       <div className="App-knuckles" style={{ transform: `scale(${scale})` }}>
         {knuckles.map(({ offset, width, keyCode, url }, index) => (
           <Knuckle
