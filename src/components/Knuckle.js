@@ -36,7 +36,7 @@ const Knuckle = ({ x, width, buffer, keyCode }) => {
         width,
         height: IMAGE_HEIGHT,
         backgroundImage: `url(${IMAGE_URL})`,
-        backgroundPosition: `${-x}px top`,
+        backgroundPosition: `${-x}px bottom`,
         position: 'relative',
       }}
     >
@@ -45,11 +45,11 @@ const Knuckle = ({ x, width, buffer, keyCode }) => {
           width,
           height: IMAGE_HEIGHT,
           backgroundImage: `url(${IMAGE_URL})`,
-          backgroundPosition: `${-x}px bottom`,
+          backgroundPosition: `${-x}px top`,
           position: 'absolute',
           left: 0,
           top: 0,
-          opacity: isActive ? 1 : 0,
+          opacity: isActive ? 0 : 1,
           transition: isFading ? 'opacity 1s' : '',
         }}
       ></div>

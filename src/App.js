@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import Knuckle from './components/Knuckle.js';
 import cs from './assets/cs.mp3';
 
