@@ -22,8 +22,6 @@ const knuckles = [
 
 const buffers = {};
 
-const loops = {};
-
 let offset = 0;
 knuckles.forEach(obj => {
   obj.offset = offset;
