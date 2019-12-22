@@ -1,6 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
+import play from 'audio-play';
+
 import Knuckle from './components/Knuckle.js';
-import { knuckles, totalWidth } from './utils/config';
+import { knuckles, buffers, totalWidth } from './utils/config';
 
 const SCALE_PERCENT = 0.9;
 
@@ -13,11 +15,19 @@ function App() {
     const onKeyDown = ({ keyCode }) => {
       activeKeyCodes[keyCode] = true;
       setActiveKeyCodes({ ...activeKeyCodes });
+      if (buffers[keyCode]) {
+        play(buffers[keyCode], {
+          start: 0,
+          autoplay: true,
+        });
+      }
     };
+
     const onKeyUp = ({ keyCode }) => {
       delete activeKeyCodes[keyCode];
       setActiveKeyCodes({ ...activeKeyCodes });
     };
+
     window.addEventListener('keydown', onKeyDown);
     window.addEventListener('keyup', onKeyUp);
     return () => {
