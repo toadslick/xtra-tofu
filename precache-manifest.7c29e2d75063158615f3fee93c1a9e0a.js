@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "17bab9f2dc2928f08b881ce4de69c44b",
+    "revision": "0d945e73ce3b478097d010fcee583191",
     "url": "/xtra-tofu/index.html"
   },
   {
-    "revision": "d86a1731094eee98200d",
+    "revision": "211b374aabde9f97e266",
     "url": "/xtra-tofu/static/css/main.3f09a245.chunk.css"
   },
   {
@@ -16,28 +16,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/xtra-tofu/static/js/2.a66db627.chunk.js.LICENSE"
   },
   {
-    "revision": "d86a1731094eee98200d",
-    "url": "/xtra-tofu/static/js/main.54c2a925.chunk.js"
+    "revision": "211b374aabde9f97e266",
+    "url": "/xtra-tofu/static/js/main.e130e7c7.chunk.js"
   },
   {
     "revision": "bae84edd5497cb64e686",
     "url": "/xtra-tofu/static/js/runtime-main.075d6af3.js"
   },
   {
-    "revision": "ae5a5a0f4ff619ebd9f4b24ecbcc6d06",
-    "url": "/xtra-tofu/static/media/chord-am.ae5a5a0f.mp3"
+    "revision": "9d82e20f4216744cc152398b6873316c",
+    "url": "/xtra-tofu/static/media/chord-am.9d82e20f.mp3"
   },
   {
-    "revision": "b7651c73be5fbeaf9e17599e93734f81",
-    "url": "/xtra-tofu/static/media/chord-c.b7651c73.mp3"
+    "revision": "723e3a0898cdbd74243daf2288c5b359",
+    "url": "/xtra-tofu/static/media/chord-c.723e3a08.mp3"
   },
   {
-    "revision": "27f1546d882cbe02733afa0681f0c981",
-    "url": "/xtra-tofu/static/media/chord-d.27f1546d.mp3"
+    "revision": "a255a7eb4dad44a36ffa724c5b4237ea",
+    "url": "/xtra-tofu/static/media/chord-d.a255a7eb.mp3"
   },
   {
-    "revision": "06fecf1a20fdc5993480c15a34d85926",
-    "url": "/xtra-tofu/static/media/chord-g.06fecf1a.mp3"
+    "revision": "75368ffc9be8be6164758efc00772ee0",
+    "url": "/xtra-tofu/static/media/chord-g.75368ffc.mp3"
   },
   {
     "revision": "3bd267b13e63b242dbf266e1ec9936c1",

@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/xtra-tofu/static/css/main.3f09a245.chunk.css",
-    "main.js": "/xtra-tofu/static/js/main.54c2a925.chunk.js",
-    "main.js.map": "/xtra-tofu/static/js/main.54c2a925.chunk.js.map",
+    "main.js": "/xtra-tofu/static/js/main.e130e7c7.chunk.js",
+    "main.js.map": "/xtra-tofu/static/js/main.e130e7c7.chunk.js.map",
     "runtime-main.js": "/xtra-tofu/static/js/runtime-main.075d6af3.js",
     "runtime-main.js.map": "/xtra-tofu/static/js/runtime-main.075d6af3.js.map",
     "static/js/2.a66db627.chunk.js": "/xtra-tofu/static/js/2.a66db627.chunk.js",
     "static/js/2.a66db627.chunk.js.map": "/xtra-tofu/static/js/2.a66db627.chunk.js.map",
     "index.html": "/xtra-tofu/index.html",
-    "precache-manifest.1603d3daa3010ca9982a1ca922295d7a.js": "/xtra-tofu/precache-manifest.1603d3daa3010ca9982a1ca922295d7a.js",
+    "precache-manifest.7c29e2d75063158615f3fee93c1a9e0a.js": "/xtra-tofu/precache-manifest.7c29e2d75063158615f3fee93c1a9e0a.js",
     "service-worker.js": "/xtra-tofu/service-worker.js",
     "static/css/main.3f09a245.chunk.css.map": "/xtra-tofu/static/css/main.3f09a245.chunk.css.map",
     "static/js/2.a66db627.chunk.js.LICENSE": "/xtra-tofu/static/js/2.a66db627.chunk.js.LICENSE",
-    "static/media/chord-am.mp3": "/xtra-tofu/static/media/chord-am.ae5a5a0f.mp3",
-    "static/media/chord-c.mp3": "/xtra-tofu/static/media/chord-c.b7651c73.mp3",
-    "static/media/chord-d.mp3": "/xtra-tofu/static/media/chord-d.27f1546d.mp3",
-    "static/media/chord-g.mp3": "/xtra-tofu/static/media/chord-g.06fecf1a.mp3",
+    "static/media/chord-am.mp3": "/xtra-tofu/static/media/chord-am.9d82e20f.mp3",
+    "static/media/chord-c.mp3": "/xtra-tofu/static/media/chord-c.723e3a08.mp3",
+    "static/media/chord-d.mp3": "/xtra-tofu/static/media/chord-d.a255a7eb.mp3",
+    "static/media/chord-g.mp3": "/xtra-tofu/static/media/chord-g.75368ffc.mp3",
     "static/media/hi-hat.mp3": "/xtra-tofu/static/media/hi-hat.3bd267b1.mp3",
     "static/media/kick.mp3": "/xtra-tofu/static/media/kick.922fe955.mp3",
     "static/media/knux.png": "/xtra-tofu/static/media/knux.1d8677b8.png",
@@ -26,6 +26,6 @@
     "static/js/runtime-main.075d6af3.js",
     "static/js/2.a66db627.chunk.js",
     "static/css/main.3f09a245.chunk.css",
-    "static/js/main.54c2a925.chunk.js"
+    "static/js/main.e130e7c7.chunk.js"
   ]
 }
