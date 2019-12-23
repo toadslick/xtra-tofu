@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/xtra-tofu/static/css/main.3f09a245.chunk.css",
+    "main.js": "/xtra-tofu/static/js/main.9af78e47.chunk.js",
+    "main.js.map": "/xtra-tofu/static/js/main.9af78e47.chunk.js.map",
+    "runtime-main.js": "/xtra-tofu/static/js/runtime-main.075d6af3.js",
+    "runtime-main.js.map": "/xtra-tofu/static/js/runtime-main.075d6af3.js.map",
+    "static/js/2.a66db627.chunk.js": "/xtra-tofu/static/js/2.a66db627.chunk.js",
+    "static/js/2.a66db627.chunk.js.map": "/xtra-tofu/static/js/2.a66db627.chunk.js.map",
+    "index.html": "/xtra-tofu/index.html",
+    "precache-manifest.206eb4e91cf8b9d1876ecd964703daeb.js": "/xtra-tofu/precache-manifest.206eb4e91cf8b9d1876ecd964703daeb.js",
+    "service-worker.js": "/xtra-tofu/service-worker.js",
+    "static/css/main.3f09a245.chunk.css.map": "/xtra-tofu/static/css/main.3f09a245.chunk.css.map",
+    "static/js/2.a66db627.chunk.js.LICENSE": "/xtra-tofu/static/js/2.a66db627.chunk.js.LICENSE",
+    "static/media/chord-c.mp3": "/xtra-tofu/static/media/chord-c.5e0f53e9.mp3",
+    "static/media/chord-d.mp3": "/xtra-tofu/static/media/chord-d.88795f44.mp3",
+    "static/media/chord-f.mp3": "/xtra-tofu/static/media/chord-f.7a3a26ee.mp3",
+    "static/media/chord-g.mp3": "/xtra-tofu/static/media/chord-g.8fc3d103.mp3",
+    "static/media/hi-hat.mp3": "/xtra-tofu/static/media/hi-hat.1cbc7987.mp3",
+    "static/media/kick.mp3": "/xtra-tofu/static/media/kick.cfecbceb.mp3",
+    "static/media/knux.png": "/xtra-tofu/static/media/knux.1d8677b8.png",
+    "static/media/reed.mp3": "/xtra-tofu/static/media/reed.af17665e.mp3",
+    "static/media/snare.mp3": "/xtra-tofu/static/media/snare.5e19314e.mp3"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.075d6af3.js",
+    "static/js/2.a66db627.chunk.js",
+    "static/css/main.3f09a245.chunk.css",
+    "static/js/main.9af78e47.chunk.js"
+  ]
+}
