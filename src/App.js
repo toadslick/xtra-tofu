@@ -14,15 +14,17 @@ function App() {
 
   useEffect(() => {
     const onKeyDown = ({ keyCode }) => {
-      activeKeyCodes[keyCode] = true;
-      setActiveKeyCodes({ ...activeKeyCodes });
       if (buffers[keyCode]) {
-        play(buffers[keyCode], {
-          start: 0,
-          autoplay: true,
-        });
+        activeKeyCodes[keyCode] = true;
+        setActiveKeyCodes({ ...activeKeyCodes });
+        if (buffers[keyCode]) {
+          play(buffers[keyCode], {
+            start: 0,
+            autoplay: true,
+          });
+        }
+        setActive(true);
       }
-      setActive(true);
     };
 
     const onKeyUp = ({ keyCode }) => {
