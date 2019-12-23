@@ -4,9 +4,9 @@ import snare from '../assets/snare.mp3';
 import kick from '../assets/kick.mp3';
 import reed from '../assets/reed.mp3';
 import hiHat from '../assets/hi-hat.mp3';
+import chordAm from '../assets/chord-am.mp3';
 import chordC from '../assets/chord-c.mp3';
 import chordD from '../assets/chord-d.mp3';
-import chordF from '../assets/chord-f.mp3';
 import chordG from '../assets/chord-g.mp3';
 
 const knuckles = [
@@ -14,10 +14,10 @@ const knuckles = [
   { width: 54, keyCode: 38, url: snare },
   { width: 71, keyCode: 40, url: reed },
   { width: 73, keyCode: 39, url: hiHat },
-  { width: 77, keyCode: 32, url: chordC },
-  { width: 68, keyCode: 87, url: chordD },
-  { width: 51, keyCode: 83, url: chordF },
-  { width: 80, keyCode: 71, url: chordG },
+  { width: 77, keyCode: 32, url: chordAm },
+  { width: 68, keyCode: 71, url: chordC },
+  { width: 51, keyCode: 83, url: chordD },
+  { width: 80, keyCode: 87, url: chordG },
 ];
 
 const buffers = {};
