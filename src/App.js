@@ -4,7 +4,7 @@ import play from 'audio-play';
 import Knuckle from './components/Knuckle.js';
 import { knuckles, buffers, totalWidth } from './utils/config';
 
-const SCALE_PERCENT = 0.9;
+const MAX_SCALE = 2;
 
 function App() {
   const [activeKeyCodes, setActiveKeyCodes] = useState({});
@@ -43,7 +43,7 @@ function App() {
 
   useEffect(() => {
     const onSizeChange = () =>
-      setScale(SCALE_PERCENT * (appRef.current.offsetWidth / totalWidth));
+      setScale(Math.min(MAX_SCALE, appRef.current.offsetWidth / totalWidth));
     window.addEventListener('resize', onSizeChange);
     onSizeChange();
     return () => window.removeEventListener('resize', onSizeChange);
