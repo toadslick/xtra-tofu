@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0d945e73ce3b478097d010fcee583191",
+    "revision": "8ea40322e411c3063d170181d814b221",
     "url": "/xtra-tofu/index.html"
   },
   {
-    "revision": "211b374aabde9f97e266",
+    "revision": "f4a4be14aa916dea24f8",
     "url": "/xtra-tofu/static/css/main.3f09a245.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/xtra-tofu/static/js/2.a66db627.chunk.js.LICENSE"
   },
   {
-    "revision": "211b374aabde9f97e266",
-    "url": "/xtra-tofu/static/js/main.e130e7c7.chunk.js"
+    "revision": "f4a4be14aa916dea24f8",
+    "url": "/xtra-tofu/static/js/main.fc3d4120.chunk.js"
   },
   {
     "revision": "bae84edd5497cb64e686",
